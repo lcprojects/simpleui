@@ -1,0 +1,26 @@
+.comment {
+    display: flex;
+    align-items: flex-start;
+
+    &-content {
+        margin-left: 1rem;
+    }
+
+    &-author {
+        font-weight: 700;
+    }
+
+    &-date {
+        font-size: 1rem;
+        color: $color-grey-3;
+    }
+
+    &-text {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    &-reply {
+        font-size: 1rem;
+    }
+}

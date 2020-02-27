@@ -1,0 +1,45 @@
+.card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    box-shadow: 0 0 1px 0 #eee;
+    border-radius: 4px;
+
+    &-mini {
+        width: 25rem;
+        margin-bottom: 0;
+    }
+
+    &-full-height {
+        height: 100%;
+    }
+
+    &-header {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    &-title {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &-subtitle {
+        margin-bottom: 0.5rem;
+        color: $color-grey-3;
+        font-size: 1.2rem;
+    }
+    
+    &-body {
+        margin-top: 1rem;
+
+        & > img {
+            width: 100%;
+        }
+    }
+
+    &-footer {
+        margin-top: 1rem;
+    }
+}

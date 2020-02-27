@@ -1,0 +1,121 @@
+.label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    padding: 0.4rem 1rem;
+    color: $color-black-2;
+    background-color: $color-grey-2;
+    border-radius: 4px;
+    
+    & > * {
+        margin-right: 0.6rem;
+    }
+    
+    
+    &.label-border {
+        background-color: $color-light;
+        border: 1px solid $color-grey-2;
+    }
+
+    &-primary {
+        color: $color-primary;
+        background-color: $color-light;
+        border: 1px solid $color-light-primary;
+    }
+    
+    &-secondary {
+        color: $color-light;
+        background-color: $color-secondary;
+        border: 1px solid $color-secondary;
+    }
+
+    
+    &-success {
+        color: $color-light;
+        background-color: $color-light-success;
+        border: 1px solid $color-light-success;
+    }
+    
+    &-success.label-border {
+        color: $color-light-success;
+        border: 1px solid $color-light-success;
+        background-color: $color-light;
+    }
+    
+    &-warning {
+        color: $color-light;
+        background-color: $color-warning;
+        border: 1px solid $color-warning;
+    }
+    
+    &-warning.label-border {
+        color: $color-warning;
+        border: 1px solid $color-warning;
+        background-color: $color-light;
+    }
+
+    &-error {
+        color: $color-light;
+        background-color: $color-light-error;
+        border: 1px solid $color-light-error;
+    }
+    
+    &-error.label-border {
+        color: $color-light-error;
+        border: 1px solid $color-light-error;
+        background-color: $color-light;
+    }
+
+    &.arrow-left::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -0.6rem;
+        width: 1rem;
+        height: 1rem;
+        transform: translateY(-50%) rotateZ(45deg);
+        background-color: inherit;
+        border-bottom: inherit;
+        border-left: inherit;
+    }
+
+    &.arrow-right::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -0.6rem;
+        width: 1rem;
+        height: 1rem;
+        transform: translateY(-50%) rotateZ(45deg);
+        background-color: inherit;
+        border-top: inherit;
+        border-right: inherit;
+    }
+
+    &.arrow-top::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -0.6rem;
+        width: 1rem;
+        height: 1rem;
+        transform: translateX(-50%) rotateZ(45deg);
+        background-color: inherit;
+        border-top: inherit;
+        border-left: inherit;
+    }
+
+    &.arrow-bottom::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -0.6rem;
+        width: 1rem;
+        height: 1rem;
+        transform: translateX(-50%) rotateZ(45deg);
+        background-color: inherit;
+        border-bottom: inherit;
+        border-right: inherit;
+    }
+}

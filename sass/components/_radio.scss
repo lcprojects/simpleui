@@ -1,0 +1,61 @@
+.radio {
+    cursor: pointer;
+    position: relative;
+    padding-left: 0.8rem;
+    
+    input[type="radio"] {
+        width: 0;
+    }
+    
+    input[type="radio"]::before {
+        cursor: pointer;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: 1px solid $color-light-primary;
+    }
+    
+    
+    input[type="radio"]::before {
+        transition: background 0.4s;
+    }
+    
+    input[type="radio"]:checked::before {
+        background-color: $color-light;
+        border: 1px solid $color-light-primary;
+    }
+
+    input[type="radio"]:hover::before {
+        border: 1px solid $color-primary;
+    }
+
+    input[type="radio"]:checked::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+    }
+
+    
+    input[type="radio"]:disabled {
+        cursor: default;
+    }
+
+    input[type="radio"]:disabled::before {
+        background-color: $color-grey;
+        border: 1px solid $color-grey;
+    }
+    
+    input[type="radio"]:disabled:hover::before {
+        border: 1px solid $color-grey;
+    }
+
+}

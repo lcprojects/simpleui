@@ -1,0 +1,27 @@
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumb {
+    position: relative;
+    display: inline-block;
+}
+
+.breadcrumb:not(:last-child) {
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.breadcrumb:not(:last-child)::before {
+    position: absolute;
+    content: "/";
+    top: 50%;
+    right: 0;
+    transform: translate(calc(50% + 0.7rem), -50%);
+    color: $color-light-primary;
+}
+
+.breadcrumb:last-child {
+    color: $color-primary;
+}

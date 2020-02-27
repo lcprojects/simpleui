@@ -1,0 +1,31 @@
+.badge {
+    &:not([data-content])::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: inherit;
+        border-width: 2px;
+        border-style: solid;
+        border-color: inherit;
+        transform: translate(50%, -50%);
+    }
+
+    &[data-content]::before {
+        content: attr(data-content);
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 0.4rem;
+        font-weight: 300;
+        border-radius: 50%;
+        background-color: inherit;
+        border-width: 2px;
+        border-style: solid;
+        border-color: inherit;
+        transform: translate(50%, -50%);
+    }
+}

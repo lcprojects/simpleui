@@ -1,0 +1,98 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+    margin: 0 0 1rem 0;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p kbd {
+    padding: 0.1rem 0.4rem;
+}
+
+blockquote {
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 1px 2px 0 $color-grey;
+    border: 1px solid $color-grey-2;
+    border-radius: 2px;
+
+    cite {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+kbd {
+    display: inline-block;
+    padding: 0.4rem;
+    color: $color-grey-6;
+    background-color: $color-light;
+    box-shadow: 0 1px 2px 0 $color-grey;
+    border: 1px solid $color-grey-2;
+    border-radius: 4px;
+}
+
+code {
+    display: inline-block;
+    white-space: pre-wrap;
+    padding: 0.5rem 1rem;
+    color: $color-light;
+    background-color: $color-black-2;
+    border-radius: 2px;
+}
+
+ul {
+
+    list-style: disc;
+    padding: 0.5rem 2rem;
+
+    li {
+        padding: 0.2rem;
+    }
+
+    ul {
+        padding: 0.2rem 1rem;
+    }
+}
+
+ul.lower-roman {
+    list-style: lower-roman;
+
+    ul {
+        list-style-type: lower-roman;
+    }
+}

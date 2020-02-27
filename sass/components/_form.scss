@@ -1,0 +1,33 @@
+.text-input {
+    outline: none;
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid $color-grey;
+    border-radius: 4px;
+    transition: border 0.5s;
+    
+    &:focus {
+        border: 1px solid $color-primary;
+    }
+}
+
+.success {
+    border: 1px solid $color-light-success;
+
+    &:focus {
+        border: 1px solid $color-light-success;
+    }
+}
+
+.error {
+    border: 1px solid $color-light-error;
+    
+    &:focus {
+        border: 1px solid $color-light-error;
+    }
+}
+
+.label-text {
+    display: block;
+    margin-bottom: 2px;
+}

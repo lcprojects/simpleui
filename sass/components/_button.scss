@@ -1,0 +1,74 @@
+.btn {
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: $color-primary;
+    box-shadow: 0 1px 0px 0px $color-grey;
+    background-color: $color-light;
+    border: 1px solid $color-light-primary;
+    border-radius: 4px;
+    
+    & > * {
+        margin-right: 0.6rem;
+    }
+
+    &:hover {
+        color: $color-primary;
+        border: 1px solid $color-primary;
+    }
+    
+    &:active {
+        transform: translateY(1px);
+    }
+    
+    &-secondary {
+        background-color: $color-secondary;
+        color: $color-light;
+        border: 1px solid $color-light-secondary;
+        box-shadow: 0 1px 0px 0px $color-grey;
+        
+        &:hover {
+            color: $color-light;
+            border: 1px solid $color-primary;
+        }
+    }
+
+    &-error {
+        box-shadow: none;
+        border: 1px solid $color-error;
+        color: $color-light;
+        background-color: $color-light-error;
+        box-shadow: 0 1px 0px 0px $color-grey;
+        
+        &:hover {
+            color: $color-light;
+            border: 1px solid $color-dark-error;
+        }
+        
+    }
+
+    &-success {
+        box-shadow: none;
+        border: 1px solid $color-success;
+        color: $color-light;
+        background-color: $color-light-success;
+        box-shadow: 0 1px 0px 0px $color-grey;
+        
+        &:hover {
+            color: $color-light;
+            border: 1px solid $color-dark-success;
+        }
+    }
+
+    &:disabled {
+        cursor: default;
+        color: $color-grey-4;
+        background-color: $color-grey-2;
+        border: 1px solid $color-grey;
+    }
+}

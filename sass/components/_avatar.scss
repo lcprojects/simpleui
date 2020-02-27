@@ -1,0 +1,126 @@
+.avatar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    & img {
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+    }
+
+
+    & &-state {
+        position: absolute;
+        left: 1.7rem;
+        bottom: -0.1rem;
+        width: 0.9rem;
+        height: 0.9rem;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+
+    &-state {
+        &.online {
+            background-color: $color-online;
+        }
+
+        &.busy {
+            background-color: $color-busy;
+        }
+
+        &.away {
+            background-color: $color-idle;
+        }
+
+        &.offline {
+            background-color: $color-offline;
+        }
+    }
+
+
+    &-xs {
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+
+        .avatar-state {
+            position: absolute;
+            left: 1.1rem;
+            bottom: 0;
+            width: 0.6rem;
+            height: 0.6rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+    }
+
+    &-sm {
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        .avatar-state {
+            position: absolute;
+            left: 1.7rem;
+            bottom: -0.1rem;
+            width: 0.9rem;
+            height: 0.9rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+    }
+
+    &-md {
+        img {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+
+        .avatar-state {
+            position: absolute;
+            left: 2.4rem;
+            bottom: -0.1rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+    }
+
+    &-lg {
+        img {
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+
+        .avatar-state {
+            position: absolute;
+            left: 3.5rem;
+            bottom: -0.1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+    }
+    
+    &-xl {
+        img {
+            width: 6.4rem;
+            height: 6.4rem;
+        }
+
+        .avatar-state {
+            position: absolute;
+            left: 4.6rem;
+            bottom: -0.1rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+    }
+}

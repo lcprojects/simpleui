@@ -1,0 +1,25 @@
+.message {
+    padding: 1rem 2rem;
+    box-shadow: 0 0 2px 0 $color-grey;
+    border: 1px solid $color-grey-3;
+    border-radius: 4px;
+    background-color: $color-grey-2;
+
+    &-success {
+        color: $color-light;
+        background-color: $color-light-success;
+        border: 1px solid $color-dark-success;
+    }
+    
+    &-error {
+        color: $color-light;
+        background-color: $color-light-error;
+        border: 1px solid $color-dark-error;
+    }
+
+    &-warning {
+        color: $color-light;
+        background-color: $color-warning;
+        border: 1px solid $color-dark-warning;
+    }
+}
